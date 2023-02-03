@@ -9,6 +9,10 @@ html {
     background-color: linen;
 }
 
+body {
+    padding: 16px;
+}
+
 .mainpagetitle {
     text-align: center;
     margin-top: 32px;
@@ -34,5 +38,21 @@ a {
 .kungpaoimg {
     height: auto;
     width: 300px;
+    /* margin: 8px 16px; */
 }
 
+.descriptioncontainer,
+.ingredientscontainer,
+.stepscontainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.ingredientscontainer {
+    margin-left: 16px;
+}
+
+.stepscontainer {
+    margin-left: 16px;
+}
