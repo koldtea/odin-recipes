@@ -1,58 +1,118 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-family: Verdana, sans-serif;
-    background-color: linen;
+  font-family: Verdana, sans-serif;
+  background-color: rgb(249, 250, 251);
 }
 
 body {
-    padding: 16px;
+  margin: 1em;
+}
+
+h1, h2, h3, h4 {
+  padding-bottom: 0.3em;
+}
+
+li {
+  padding-bottom: 0.5em;  
+}
+
+/* main page */
+
+main.main {
+  margin-top: 12em;
+}
+
+header {
+  background-color: #eee;
+  padding: 2em 0;
+  color: #1f2937;
 }
 
 .mainpagetitle {
-    text-align: center;
-    margin-top: 32px;
+  text-align: center;
+  font-weight: 600;
+  /* margin-top: 32px; */
+}
+
+header,
+.recipe {
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.recipe {
+  background-color: linen;
+  padding: 1em;
 }
 
 ul.recipenav {
-    list-style: none;
-    min-height: 60vh;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    gap: 16px;
+  list-style: none;
+  font-style: italic;
+  margin: 2em auto;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 16px;
 }
 
 a {
-    text-decoration: none;
-    font-size: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #1f2937;
 }
 
-.naanimg, 
-.mushroomporkchopsimg,
-.kungpaoimg {
-    height: auto;
-    width: 300px;
-    /* margin: 8px 16px; */
+a:hover {
+  text-decoration: underline;
 }
 
-.descriptioncontainer,
-.ingredientscontainer,
-.stepscontainer {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
+/* main page */
+
+/* recipe pages */
+
+.recipeimg {
+  width: 300px;
+  height: auto;
+  border: 2px solid burlywood;
+  border-radius: 1.2em;
 }
 
-.ingredientscontainer {
-    margin-left: 16px;
+.description,
+.ingredients,
+.steps {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
-.stepscontainer {
-    margin-left: 16px;
+.ingredients {
+  margin-left: 16px;
+}
+
+.steps {
+  margin-left: 16px;
+}
+
+/* recipe pages */
+
+.recipetitle {
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.recipewrapper {
+  background-color: linen;
+  border: 2px solid black;
+  border-radius: 2em;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1.2em;
 }
